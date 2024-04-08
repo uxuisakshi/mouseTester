@@ -1,0 +1,599 @@
+@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+.lato{
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+  }
+
+body{
+  font-family: "Prata", serif !important;
+  font-weight: 400;
+  font-style: normal;
+  overflow-x: hidden;
+}
+
+#skip{
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    /* color:white;
+    background-color: #00A8E8; */
+} 
+
+#skip:focus{
+    position: static;
+}
+
+.main1{
+    background-image: url(./images/bg-image-3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    padding-top: 70px;
+    padding-left: 85px;
+    padding-bottom: 265px;
+    /* padding: 450px 80px; */
+}
+
+#etronlink{
+    border: 2px solid white;
+    padding: 15px;
+    color: black;
+    text-decoration: none;
+    background-color:white;
+}
+
+#setronlink{
+    border: 2px solid white;
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+}
+
+.nav-item{
+    padding-left: 45px;
+    position: relative;
+    text-align: center;
+    
+}
+
+.nav-item :hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+#navitem{
+    margin-left: 200px;
+}
+
+#navitem :focus-visible{
+    outline: 1px solid black;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.carm a{
+    text-decoration: none;
+}
+
+#h2{
+    text-align: center;
+}
+
+.carmodels1 ul{
+    display: flex;
+    position: relative;
+}
+
+.carmodels1 ul p{
+    text-align: center;
+    color: black;
+}
+
+.carmodels2 ul{
+    display: flex;
+    position: relative;
+}
+
+.carmodels2 ul p{
+    text-align: center;
+    color: black;
+}
+
+.carmodels3 ul{
+    display: flex;
+    position: relative;
+}
+
+.carmodels3 ul p{
+    text-align: center;
+    color: black;
+}
+
+.carmodels1 ul li:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+    /* transform: rotate(-20deg);
+    transform: rotate(-10deg); */
+}
+
+.carmodels1 ul li a:hover{
+    font-weight: bold;
+}
+
+.carmodels2 ul li a:hover{
+    font-weight: bold;
+}
+
+.carmodels2 ul li:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+    /* transform: rotate(-20deg);
+    transform: rotate(-10deg); */
+}
+
+.main3{
+    display: flex;
+    position: relative;
+}
+
+#Audi-virtualShowR{
+    padding: 50px;
+}
+
+.main3 h2{
+    padding-left: 15px;
+    padding-top: 90%;
+}
+
+#explore{
+    padding: 20px 65px;
+    margin-left: 15px;
+    font-size: large;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    border: 2px solid black;
+}
+
+.main4{
+    /*background-image: url(./images/bg1-E-tronHub-2878X3500.jpg); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+.elect{
+    background-color: white;
+    display: inline-block;
+    border: 2px solid white;
+    padding: 50px;
+}
+
+.h2elect{
+    color: #333333;
+    font-weight: 600;
+}
+
+.pelect{
+    font-weight: 450;
+}
+
+.alect1{
+    padding: 10px 30px;
+    border: 2px solid black;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+}
+
+
+.alect2{
+    padding: 10px 30px;
+    border: 2px solid black;
+    color: black;
+    text-decoration: none;
+}
+
+footer{
+    background-color: black;
+}
+
+
+
+.links{
+    display: flex;
+    padding: 10px;
+}
+
+.ref{
+    display: inline;
+    position: relative;
+    padding: 10px;
+    padding-left: 135px;
+}
+.ref a{
+    color:white;
+    text-decoration: none;
+}
+
+.social{
+    display: flex;
+    margin-left: 70%;
+}
+
+.icons{
+    display: inline;
+    position: relative;
+    font-size: 35px;
+    letter-spacing: 15px;
+    text-align: right;
+    /* margin-left: 45px; */
+}
+
+.icons a{
+    color:white;
+    text-decoration: none;
+}
+
+.end1{
+    display: flex;
+}
+
+.copyright{
+    color: white;
+    padding: 10px;
+    padding-left: 50px;
+}
+
+.end2{
+    display: flex;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+.e1{
+    display: inline;
+    position: relative;
+    /* font-size: 20px; */
+    padding: 10px;
+   
+}
+
+.e1 a{
+    color: white;
+    text-decoration: none;
+}
+
+.lastpara{
+    color: white;
+    padding: 10px;
+    padding-left: 45px;
+}
+
+
+.aboutmain1{
+    background-image: url(./images/about\ bg\ image.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 250px 60px;
+}
+
+.aboutmain2{
+    text-align: center;
+}
+
+.aboutmain2 p{
+    font-weight: 400;
+    font-size: 18px;
+    color: #515050;
+}
+
+.aboutmain3{
+    display: flex;
+}
+
+.aboutmain3 a{
+    color: black;
+    text-decoration: none;
+    word-spacing: 2px;
+    text-align: center;
+}
+
+.abtimg1{
+    height: auto;
+    width: 455px;
+    margin-left: 35px;
+}
+
+.abtimg1:hover{
+    transform: scale(1.025);
+    transition: 0.5s;
+    font-weight: bold;
+}
+
+.abtimg2{
+    height: auto;
+    width: 75px;
+    padding-left: 40px;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+.abtimg2:hover{
+    transform: scale(1.025);
+    transition: 0.5s;
+    font-weight: bold;
+}
+
+.abtimg3{
+    height: auto;
+    width: 150%;
+    padding-bottom: 5px;
+    /* padding-left:130px; */
+    margin-left: 245px;
+}
+
+.abtimg3:hover{
+    transform: scale(1.025);
+    transition: 0.5s;
+    font-weight: bold;
+}
+
+.projmain1{
+    text-align: center;
+    padding: 150px 65px;
+    background-image: url(./images/proj-bg-img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.projmain1:hover{
+    transform: scale(1.025);
+    transition: 0.5s;
+}
+
+.projmain2{
+    text-align: left;
+    margin-left: 355px;
+    margin-top: 35px;
+}
+
+.projmain2 p{
+    font-weight: 400;
+}
+
+.projmain3{
+    display: flex;
+    position: relative;
+}
+
+.projmain3 h2{
+    padding-left: 25px;
+    padding-top: 30px;
+    display: block;
+    font-weight: 400;
+    position: relative;
+}
+#projp {
+    display: block;
+    position: absolute;
+    left: 52%;
+    margin-top: 10%;
+}
+
+.projmain3 a{
+    color: black;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 15px 55px;
+    border: 2px solid black;
+}
+
+.projmain4{
+    display: flex;
+    position: relative;
+}
+
+.projmain4 h2{
+    display: block;
+    font-weight: 400;
+    position: relative;
+    padding-left: 15px;
+    padding-top: 50px;
+}
+
+#projp2{
+    display: block;
+    position: absolute;
+    margin-top: 6%;
+    padding-left: 15px;
+    padding-top: 6%;
+}
+
+.projmain4 a{
+    color: black;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 15px 55px;
+    border: 2px solid black;
+}
+
+.aboutmain5{
+    display: flex;
+    position: relative;
+}
+
+#abtp1{
+    display: block;
+    position: absolute;
+    left: 60%;
+    padding-left: 25px;
+}
+
+#abtp2{
+    display: block;
+    position: absolute;
+    left: 60%;
+    /* margin-top: 15px; */
+    padding-left: 25px;
+    padding-top: 15px;
+}
+
+.aboutmain5 h2{
+    display: block;
+    position: relative;
+    margin-top: 15px;
+    padding-left: 25px;
+    padding-top: 10px;
+    font-weight: 400;
+}
+
+.aboutmain5 a{
+    color: black;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 15px 55px;
+    border: 2px solid black;
+}
+
+.abtcont{
+    padding-top: 55px;
+}
+
+.blogmain1{
+    text-align: center;
+    padding: 150px 65px;
+    background-image: url(./images/blog-bg-img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.blogmain1 :hover{
+    transform: scale(1.025);
+    transition: 0.5s;
+}
+
+.blogmain2{
+    margin-top: 25px;
+    text-align: center;
+    padding: 50px 65px;
+    background-color: #f50537;
+}
+
+.blogmain2 a{
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    padding: 15px 55px;
+}
+
+.blogmain3{
+    text-align: center;
+    padding-top: 55px;
+}
+
+.blogmain3 h2{
+    font-size: 45px;
+    font-weight: 400;
+}
+
+.blogmain3 h3{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.blogmain4{
+    display: flex;
+    position: relative;
+}
+
+.blogmain4 h2{
+    display: block;
+    font-weight: 400;
+    position: relative;
+    padding-left: 15px;
+    padding-top: 50px;
+}
+
+#blogp2{
+    display: block;
+    position: absolute;
+    margin-top: 6%;
+    padding-left: 15px;
+    padding-top: 6%;
+}
+
+.blogmain4 a{
+    color: black;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 15px 55px;
+    border: 2px solid black;
+}
+
+.blogmain5{
+    display: flex;
+    position: relative;
+}
+
+.blogmain5 h2{
+    padding-left: 25px;
+    padding-top: 50px;
+    display: block;
+    font-weight: 400;
+    position: relative;
+}
+#blogp {
+    display: block;
+    position: absolute;
+    left: 62%;
+    margin-top: 12%;
+    padding-top: 15px;
+}
+
+.blogmain5 a{
+    color: black;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 15px 55px;
+    border: 2px solid black;
+}
+
+
+.contactmain1{
+    padding: 200px 65px;
+    background-image:url(./images/contact-bg-image.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.contactmain2{
+    text-align: left;
+    padding-left: 465px;
+    background-color: burlywood;
+
+}
+
+.contactmain2 h1{
+    font-size: 35px;
+    font-weight: 400;
+}
+
+.send{
+    background-color: red;
+    color: white;
+    padding: 10px 45px;
+}
+

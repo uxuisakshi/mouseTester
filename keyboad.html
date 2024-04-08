@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyboard Navigation Data</title>
+    <!-- Include heatmap.js library -->
+    <script src="https://unpkg.com/heatmap.js"></script>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            position: relative;
+        }
+        #heatmapContainer {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="heatmapContainer"></div>
+
+    <script>
+        var dataPoints = [];
+
+        // // Function to add keyboard event listener
+        // function addKeyboardEventListener() {
+        //     document.addEventListener('keydown', function(event) {
+        //         // Get key pressed by the user
+        //         var keyPressed = event.key;
+
+        //         // Get coordinates of the target element
+        //         var targetElement = event.target;
+        //         var rect = targetElement.getBoundingClientRect();
+        //         var xPosition = rect.left + (rect.width / 2);
+        //         var yPosition = rect.top + (rect.height / 2);
+
+        //         // Add data point to array
+        //         dataPoints.push({ key: keyPressed, x: xPosition, y: yPosition });
+        //     });
+        // }
+
+        // Initialize heatmap.js
+        window.onload = function() {
+            // Add keyboard event listener after the page has fully loaded
+            addKeyboardEventListener();
+
+            // Save data to JSON file after 1 minute of page load
+            setTimeout(function() {
+                var jsonData = JSON.stringify(dataPoints);
+                var blob = new Blob([jsonData], { type: "application/json" });
+                var url = URL.createObjectURL(blob);
+                var a = document.createElement('a');
+                a.href = url;
+                a.download = 'keyboard_navigation_data.json';
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
+
+                // Create heatmap from JSON data
+                var heatmapInstance = h337.create({
+                    container: document.getElementById('heatmapContainer')
+                });
+                heatmapInstance.setData(parseDataPoints(dataPoints));
+
+                // Capture heatmap as image
+                setTimeout(function() {
+                    captureHeatmap();
+                }, 2000); // Delay for capturing the heatmap
+            }, 10000); // 1 minute = 60000 milliseconds
+        }
+
+        // Function to parse data points
+        function parseDataPoints(data) {
+            var parsedData = [];
+            var yWithScroll = e.clientY + window.scrollY;
+            data.forEach(function(item) {
+                parsedData.push({
+                    x: item.x,
+                    y: item.y,
+                    value: 1 // Assuming each key press contributes equally
+                });
+            });
+            return { max: 1, data: parsedData };
+        }
+        
+    </script>
+
+
+    <!-- Include html2canvas library for capturing screenshot -->
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+</body>
+</html>
